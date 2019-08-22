@@ -18,6 +18,7 @@ namespace PostgresCom
 
         protected void ConnectionBtn_Click(object sender, EventArgs e)
         {
+            // Реализовано не по принципам SOLID для простоты в сжатые сроки - что бы дать пробную версию. Такое было задание
             string connString = string.Format("Server={0};Username={1};Database={2};Port={3};Password={4};SSLMode=Prefer",
                    "localhost",
                    LoginTxt.Text,
