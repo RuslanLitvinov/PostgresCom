@@ -36,7 +36,7 @@ namespace PostgresCom
                 }
                 catch (NpgsqlException ex)
                 {
-                    if (ex.Message.IndexOf("28P01") > -1)
+                    if (ex.Message.IndexOf("28P01") > -1)  // Не нашел константы исключений NpgsqlException
                     {
                         ConnectionStatus.Text = "Неверное имя пользователя или пароль.";
                     }
